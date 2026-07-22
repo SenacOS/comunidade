@@ -1,4 +1,4 @@
-# 💬 SenacOS · Comunidade
+# SenacOS · Comunidade
 
 Este repositório é o fórum oficial da comunidade SenacOS — o espaço pra tirar dúvida, avisar algo, trocar ideia ou mostrar o que você andou construindo, sem misturar isso com as Issues de projetos sérios sendo avaliados.
 
