@@ -1,0 +1,43 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Compartilhe algo que você construiu — não precisa ser um projeto acadêmico oficial da SenacOS, pode ser qualquer coisa que você queira mostrar pra comunidade.
+
+  - type: input
+    id: nome-projeto
+    attributes:
+      label: Nome do projeto
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link (repositório, deploy, vídeo, etc.)
+      placeholder: "https://github.com/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Do que se trata?
+      description: O que o projeto faz, qual problema resolve, o que você aprendeu construindo.
+    validations:
+      required: true
+
+  - type: input
+    id: tecnologias
+    attributes:
+      label: Tecnologias usadas
+      placeholder: "Ex.: React, Spring Boot, PostgreSQL"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: feedback
+    attributes:
+      label: Feedback
+      options:
+        - label: Estou aberto(a) a receber feedback e sugestões sobre o projeto

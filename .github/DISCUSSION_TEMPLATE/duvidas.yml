@@ -1,0 +1,40 @@
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de postar, dá uma olhada se sua dúvida já não foi respondida em outro tópico. Quanto mais contexto você der aqui, mais rápido alguém consegue te ajudar.
+
+  - type: input
+    id: curso
+    attributes:
+      label: Curso e semestre
+      description: "Ex.: ADS - 3º semestre"
+      placeholder: "CURSO - Nº semestre"
+    validations:
+      required: false
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Qual é a sua dúvida?
+      description: Descreva o problema ou a pergunta com o máximo de detalhe possível.
+      placeholder: Explique o que você está tentando fazer e onde travou.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou?
+      description: Passos, comandos, links ou trechos de código que você já testou (se aplicável).
+    validations:
+      required: false
+
+  - type: input
+    id: contexto-tecnico
+    attributes:
+      label: Ambiente / tecnologia (se for uma dúvida técnica)
+      description: "Ex.: Java 21, Spring Boot 3.3, Node 20"
+    validations:
+      required: false
