@@ -1,0 +1,49 @@
+name: "Avisos e Comunicados"
+description: "Comunicados oficiais da organização, atualizações institucionais, eventos ou infraestrutura."
+labels: ["aviso"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este espaço para publicar comunicados importantes, sejam eles internos da nossa organização independente ou repasses oficiais de instituições educacionais (mudanças no calendário, infraestrutura de unidades, palestras, etc.).
+        **Seja direto e claro sobre quem é afetado por este aviso.**
+
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria do Aviso
+      description: Selecione o tipo de comunicado que melhor descreve esta postagem.
+      options:
+        - Comunicado Institucional (Feriados, Aulas, Infraestrutura)
+        - Atualização da Organização (Nossos projetos, regras, repositórios)
+        - Eventos, Palestras ou Hackathons
+        - Alerta Crítico (Oscilação de energia, sistemas fora do ar)
+    validations:
+      required: true
+
+  - type: input
+    id: abrangencia
+    attributes:
+      label: Público Afetado / Unidade
+      description: Quem precisa ler isso? Especifique se é geral, para um curso específico ou uma unidade física.
+      placeholder: "Ex.: Geral; Apenas alunos de ADS; Senac - Unidade X; Polo EAD..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: Detalhes do Comunicado
+      description: Forneça todas as informações necessárias. Se houver ações esperadas dos membros, liste-as claramente.
+      placeholder: "Descreva o que está acontecendo, datas importantes e impactos..."
+    validations:
+      required: true
+
+  - type: input
+    id: links-oficiais
+    attributes:
+      label: Links / Fontes Oficiais
+      description: Adicione links para notícias, calendários ou páginas de inscrição (se houver).
+      placeholder: "https://..."
+    validations:
+      required: false
