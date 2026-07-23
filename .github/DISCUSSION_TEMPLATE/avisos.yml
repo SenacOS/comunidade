@@ -1,5 +1,4 @@
-name: "Avisos e Comunicados"
-description: "Comunicados oficiais da organização, atualizações institucionais, eventos ou infraestrutura."
+title: "[Aviso] "
 labels: ["aviso"]
 body:
   - type: markdown
